@@ -1,0 +1,328 @@
+/* Button ------ */
+a {
+  cursor: pointer;
+}
+
+a.button {
+  padding: 18px 27px;
+  border: 2px solid white;
+  border-radius: 999px;
+  box-shadow: 10px 10px 25px 0 #1d0dca17;
+  text-align: center;
+  background-color: #F6F9FE;
+  color: #3c4043;
+  border-radius: 24px;
+  border-style: none;
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+
+}
+
+a.button:hover {
+  background: #edaa6b;
+  box-shadow: 10px 10px 25px 0 #1d0dca17;
+  color: #ffffff;
+}
+
+h1 a.button {
+  box-shadow: 0px 0px 2px 0 #FFFFFF;
+  font-size: 17px;
+  border: 0;
+  display: inline-block;
+}
+
+.button,
+#flexbox h1,
+footer address,
+header h1 strong,
+#links {
+  font-family: "Roboto", Google Sans;
+  letter-spacing: 1px;
+}
+
+/* Body e gestione flexbox--------------- */
+
+body {
+  color: rgba(26, 26, 26, .7);
+  font-family: 'Roboto', Google Sans;
+  font-size: 20px;
+  margin: 0;
+}
+
+
+#flexbox {
+  display: flex;
+  justify-content: space-between;
+}
+
+#flexbox div {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+img.image-paragraph {
+  border-radius: 20px;
+  box-shadow: 10px 20px 35px 0 #1d0dca17;
+  width: 100%;
+}
+
+ h1 {
+  color: rgb(237, 170, 107);
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+h1 strong{
+   color: rgb(255 255 255);
+  font-weight: normal;
+  letter-spacing: 2px;
+}
+
+/* Footer ------------------- */
+
+footer {
+  background-color: rgb(200, 180, 155);
+  color: rgba(255, 255, 255);
+  padding: 30px;
+  border-radius: 70px 70px 0px 0px;
+  text-align: center;
+}
+
+footer p {
+  color: rgba(255, 255, 255);
+}
+
+/* Header ---------------- */
+
+header h1 {
+  font-size: .7em;
+  line-height: 1.5;
+}
+
+header {
+  color: white;
+  background-image: url("../images/homescreenimage.jpg");
+  background-size: cover;
+  background-position: center;
+  border-radius: 0px 0px 70px 70px;
+  height: 600px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 0px 0px 70px 70px;
+  content: '';
+}
+
+header h1 {
+  font-weight: normal;
+  text-align: center;
+  z-index: 1;
+}
+
+header h1 a {
+  font-size: 0.9em;
+}
+
+
+header h1 strong {
+  font-size: 4.25em;
+  letter-spacing: 4px;
+}
+
+header nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  font-size: .875em;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ------------- */
+
+#menu {
+  display: none;
+}
+
+#menu div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+}
+
+#links a {
+  margin: 15px;
+}
+
+#logo {
+  font-size: 2.5em;
+}
+
+
+#main p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 125px;
+  width: 60%;
+}
+
+
+#main h1 {
+  font-size: 2em;
+  font-weight: normal;
+  color: rgba(26,26,26,.9);
+}
+
+p {
+  line-height: 2.25em;
+}
+
+section {
+  margin: 100px 125px;
+  text-align: center;
+}
+
+/* Mobile View ----- */
+
+@media (max-width: 500px) {
+  header h1 strong {
+    font-size: 5em;
+    letter-spacing: 3px;
+  }
+  h1 a.button {
+    display: none;
+  }
+
+  #links {
+    display: none;
+  }
+
+  #main p {
+    width: 90%;
+    margin-bottom: 2em;
+  }
+
+  #menu {
+    display: block;
+  }
+
+  #logo {
+	  font-size: 3em;
+	}
+
+  section {
+    font-size: 20px;
+    margin: 40px 10px;
+  }
+
+  body {
+    font-size: 14px;
+  }
+
+  header {
+    height: 400px;
+    line-height: 1;
+  }
+
+  #flexbox {
+    flex-direction: column;
+  }
+}
+
+/* CSS per Spotify */
+.APIrest .Spotify{
+  margin: 20px;
+}
+.APIrest div h1{
+  font-size: 2em;
+}
+
+.APIrest div input{
+  border-radius: 10px;
+  padding: 5px;
+}
+
+.APIrest div button{
+  padding: 5px;
+  border-radius: 10px;
+  color: #000000;
+  background-color: #F6F9FE;
+}
+
+.title_result, .content_result{
+  border: 5px #edaa6b solid;
+  border-radius: 25px;
+  color: black;
+  text-align: center;
+  padding: 25px;
+  width: 98%;
+}
+
+.APIrest div{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 48%;
+  height: auto;
+  border-radius: 25px;
+  box-shadow: 10px 10px 25px 0 #1d0dca17;
+  background-color: #F6F9FE;
+}
+
+.APIrest form{
+  padding: 20px;
+  box-shadow: none;
+}
+
+.APIrest .result{
+  border: none;
+  box-shadow: none;
+}
+
+/* CSS per Ricerca libri di cucina */
+.APIrest .search_box{
+  position: center;
+  margin: 15px;
+}
+
+#library{
+  margin-top: 10px;
+  border: 1px rgb(237, 170, 107);
+  width: 48%;
+  position:relative;
+  display:flex;
+}
+
+#flexbox .APIrest {
+  display: flex;
+  justify-content: space-between;
+}
+
+#library .book{
+  margin: 30px;
+  padding: 25px;
+  position: center;
+}
+
+#library img{
+ /* max-width: 130%;*/
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
